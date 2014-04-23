@@ -1,0 +1,26 @@
+{
+  "name": "component-fbp",
+  "version": "0.1.0",
+  "description": "Component plugin for FBP files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noflo/component-fbp.git"
+  },
+  "keywords": [
+    "noflo",
+    "component"
+  ],
+  "author": {
+    "name": "Henri Bergius",
+    "email": "henri.bergius@iki.fi",
+    "url": "http://bergie.iki.fi"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fbp": "^1.1.1"
+  }
+}
