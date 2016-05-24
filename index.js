@@ -27,7 +27,16 @@ module.exports = function(options) {
         fbpFiles.push(file);
 
         var fbpData = fs.readFileSync(pkg.path(file), 'utf-8');
-        var json = fbp.parse(fbpData);
+        try {
+          var json = fbp.parse(fbpData);
+        } catch (e) {
+          // Rewrite message to include more information
+          e.message = "Error parsing " + file + " : " + e.message;
+          if (e.line && e.column) {
+            e.message = e.message + ' @ line=' + e.line + ',column=' + e.column;
+          }
+          throw e;
+        }
 
         var js = "module.exports = JSON.parse('"+JSON.stringify(json).replace(/'/g, "\\'")+"');";
 
