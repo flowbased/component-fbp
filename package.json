@@ -1,6 +1,6 @@
 {
   "name": "component-fbp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Component plugin for FBP files",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fbp": "^1.1.1"
+    "fbp": "~1.1.7"
   }
 }
