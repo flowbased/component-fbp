@@ -1,6 +1,8 @@
 component-fbp
 ==============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/flowbased/component-fbp.svg)](https://greenkeeper.io/)
+
 Component plugin for requiring [FBP](http://noflojs.org/documentation/fbp/) files
 
 Usage
